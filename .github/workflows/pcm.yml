@@ -29,9 +29,9 @@ jobs:
             echo "version=0.0.0-dev" >> $GITHUB_OUTPUT
           fi
 
-      - name: Build zip from archive-root
+      - name: Build zip from package 
         run: |
-          cd archive-root
+          cd package
           zip -r ../vinciecodrive-libs-${{ steps.ver.outputs.version }}.zip .
           cd ..
 
