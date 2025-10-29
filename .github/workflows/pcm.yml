@@ -1,0 +1,96 @@
+name: Build & Publish PCM package
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'   # déclenche sur v1.2.3
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Extract version from tag
+        id: ver
+        run: |
+          if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
+            echo "version=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+          else
+            echo "version=0.0.0-dev" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Build zip from archive-root
+        run: |
+          cd archive-root
+          zip -r ../vinciecodrive-libs-${{ steps.ver.outputs.version }}.zip .
+          cd ..
+
+      - name: Compute size and sha256
+        id: sums
+        run: |
+          FILE="vinciecodrive-libs-${{ steps.ver.outputs.version }}.zip"
+          SIZE=$(stat -c%s "$FILE")
+          SHA=$(sha256sum "$FILE" | cut -d ' ' -f1)
+          echo "size=$SIZE" >> $GITHUB_OUTPUT
+          echo "sha=$SHA" >> $GITHUB_OUTPUT
+
+      - name: Prepare dist/
+        run: |
+          mkdir -p dist
+          mv vinciecodrive-libs-${{ steps.ver.outputs.version }}.zip dist/
+
+      - name: Generate repository.json
+        run: |
+          VERSION="${{ steps.ver.outputs.version }}"
+          URL="https://vinciecodrive.github.io/kicad-libs/vinciecodrive-libs-${VERSION}.zip"
+          cat > dist/repository.json << 'EOF'
+          {
+            "packages": [
+              {
+                "metadata": {
+                  "$schema": "https://go.kicad.org/pcm/schemas/v1",
+                  "identifier": "org.vinciecodrive.kicadlibs",
+                  "type": "library",
+                  "name": "VinciEcoDrive Libraries",
+                  "description": "Symboles, empreintes et modèles 3D internes VED",
+                  "author": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
+                  "maintainer": { "name": "VinciEcoDrive", "contact": {"email": "contact@vinciecodrive.fr"} },
+                  "license": "CC-BY-4.0",
+                  "resources": { "homepage": "https://github.com/VinciEcoDrive/kicad-libs" },
+                  "versions": [
+                    {
+                      "version": "__VERSION__",
+                      "status": "stable",
+                      "kicad_version": "9.0",
+                      "download_url": "__URL__",
+                      "download_size": __SIZE__,
+                      "download_sha256": "__SHA__",
+                      "install_size": __SIZE__
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+          EOF
+          sed -i "s|__VERSION__|${VERSION}|g" dist/repository.json
+          sed -i "s|__URL__|${URL}|g" dist/repository.json
+          sed -i "s|__SIZE__|${{ steps.sums.outputs.size }}|g" dist/repository.json
+          sed -i "s|__SHA__|${{ steps.sums.outputs.sha }}|g" dist/repository.json
+
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: dist
