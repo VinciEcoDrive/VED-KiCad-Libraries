@@ -29,9 +29,9 @@ jobs:
             echo "version=0.0.0-dev" >> $GITHUB_OUTPUT
           fi
 
-      - name: Build zip from archive-root
+      - name: Build zip from VED-KiCad-Libraries
         run: |
-          cd archive-root
+          cd VED-KiCad-Libraries
           zip -r ../vinciecodrive-libs-${{ steps.ver.outputs.version }}.zip .
           cd ..
 
