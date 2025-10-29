@@ -1,4 +1,4 @@
-![VEDLogo](package/esources/icon.png)
+![VEDLogo](package/resources/icon.png)
 
 # 🚀 VED KiCad Libraries
 
