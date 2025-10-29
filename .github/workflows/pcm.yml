@@ -70,27 +70,23 @@ jobs:
           cat > dist/repository.json << EOF
           {
             "\$schema": "https://go.kicad.org/pcm/schemas/v1",
-            "packages": [
+            "identifier": "org.vinciecodrive.kicadlibs",
+            "type": "library",
+            "name": "VinciEcoDrive Libraries",
+            "description": "Symboles, empreintes et modèles 3D internes VED",
+            "author": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
+            "maintainer": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
+            "license": "CC-BY-4.0",
+            "resources": { "homepage": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries" },
+            "versions": [
               {
-                "identifier": "org.vinciecodrive.kicadlibs",
-                "type": "library",
-                "name": "VinciEcoDrive Libraries",
-                "description": "Symboles, empreintes et modèles 3D internes VED",
-                "author": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
-                "maintainer": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
-                "license": "CC-BY-4.0",
-                "resources": { "homepage": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries" },
-                "versions": [
-                  {
-                    "version": "${VERSION}",
-                    "status": "stable",
-                    "kicad_version": "9.0",
-                    "download_url": "${URL}",
-                    "download_size": ${SIZE},
-                    "download_sha256": "${SHA}",
-                    "install_size": ${INSTALL_SIZE}
-                  }
-                ]
+                "version": "${VERSION}",
+                "status": "stable",
+                "kicad_version": "9.0",
+                "download_url": "${URL}",
+                "download_size": ${SIZE},
+                "download_sha256": "${SHA}",
+                "install_size": ${INSTALL_SIZE}
               }
             ]
           }
