@@ -1,3 +1,5 @@
+![VEDLogo](package\resources\icon.png)
+
 # 🚀 VED KiCad Libraries
 
 Welcome — this repo contains the curated KiCad 9-compatible libraries used by the VinciEcoDrive team. It's packaged for easy installation via KiCad's Plugin & Content Manager (PCM).
