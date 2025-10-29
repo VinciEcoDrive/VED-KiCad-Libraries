@@ -1,7 +1,7 @@
 {
   "packages": [
     {
-      "$schema": "https://go.kicad.org/pcm/schemas/v1",
+      "": "https://go.kicad.org/pcm/schemas/v1",
       "identifier": "org.vinciecodrive.kicadlibs",
       "type": "library",
       "name": "VinciEcoDrive Libraries",
@@ -11,30 +11,29 @@
         "name": "VinciEcoDrive",
         "contact": {
           "email": "contact@vinciecodrive.fr",
-          "web": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries"
+          "web": "https://vinciecodrive.fr/"
         }
       },
       "maintainer": {
         "name": "VinciEcoDrive",
         "contact": {
           "email": "contact@vinciecodrive.fr",
-          "web": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries"
+          "web": "https://vinciecodrive.fr/"
         }
       },
       "license": "CC-BY-4.0",
       "resources": {
-        "homepage": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries",
-        "Github": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries",
-        "icon": "https://vinciecodrive.github.io/VED-KiCad-Libraries/icon.png"
+        "homepage": "https://vinciecodrive.github.io/VED-KiCad-Libraries/",
+        "Github": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries"
       },
       "versions": [
         {
-          "version": "0.1.6",
+          "version": "0.1.7",
           "status": "stable",
           "kicad_version": "9.0",
-          "download_url": "https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-0.1.6.zip",
-          "download_size": 7896,
-          "download_sha256": "2da8f366feda3622aa9c3160526afa586dcd3597a9caf416e0c32bd570505cb8",
+          "download_url": "https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-0.1.7.zip",
+          "download_size": 7892,
+          "download_sha256": "ad7f71f0200890f2f7fccebb069b0b42600353d0286aaecc59297c60952e0b5a",
           "install_size": 3644
         }
       ]
