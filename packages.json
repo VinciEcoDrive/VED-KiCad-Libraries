@@ -1,0 +1,25 @@
+{
+  "packages": [
+    {
+      "identifier": "org.vinciecodrive.kicadlibs",
+      "type": "library",
+      "name": "VinciEcoDrive Libraries",
+      "description": "Symboles, empreintes et modèles 3D internes VED",
+      "author": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
+      "maintainer": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
+      "license": "CC-BY-4.0",
+      "resources": { "homepage": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries" },
+      "versions": [
+        {
+          "version": "0.1.4",
+          "status": "stable",
+          "kicad_version": "9.0",
+          "download_url": "https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-0.1.4.zip",
+          "download_size": 7896,
+          "download_sha256": "5c8666f699d9fd3533aaa724f156e11ac84a3e7477f27fbe67e91531cf172389",
+          "install_size": 3644
+        }
+      ]
+    }
+  ]
+}
