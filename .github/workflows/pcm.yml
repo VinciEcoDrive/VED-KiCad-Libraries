@@ -69,7 +69,7 @@ jobs:
           {
             "packages": [
               {
-                "\$schema": "https://go.kicad.org/pcm/schemas/v1",
+                "$schema": "https://go.kicad.org/pcm/schemas/v1",
                 "identifier": "org.vinciecodrive.kicadlibs",
                 "type": "library",
                 "name": "VinciEcoDrive Libraries",
@@ -79,21 +79,20 @@ jobs:
                   "name": "VinciEcoDrive",
                   "contact": {
                     "email": "contact@vinciecodrive.fr",
-                    "web": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries"
+                    "web": "https://vinciecodrive.fr/"
                   }
                 },
                 "maintainer": {
                   "name": "VinciEcoDrive",
                   "contact": {
                     "email": "contact@vinciecodrive.fr",
-                    "web": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries"
+                    "web": "https://vinciecodrive.fr/"
                   }
                 },
                 "license": "CC-BY-4.0",
                 "resources": {
-                  "homepage": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries",
-                  "Github": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries",
-                  "icon": "https://vinciecodrive.github.io/VED-KiCad-Libraries/icon.png"
+                  "homepage": "https://vinciecodrive.github.io/VED-KiCad-Libraries/",
+                  "Github": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries"
                 },
                 "versions": [
                   {
@@ -142,15 +141,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: dist
-
-      - name: Copy package icon to dist/
-        if: always()
-        shell: bash
-        run: |
-          # copy icon if it exists so it is published to GitHub Pages
-          if [ -f package/ressources/icon.png ]; then
-            cp package/ressources/icon.png dist/icon.png
-            echo "Copied package/ressources/icon.png -> dist/icon.png"
-          else
-            echo "No icon found at package/ressources/icon.png; skipping copy"
-          fi
