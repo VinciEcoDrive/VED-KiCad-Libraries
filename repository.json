@@ -1,28 +1,26 @@
 {
+  "$schema": "https://go.kicad.org/pcm/schemas/v1",
   "packages": [
     {
-      "metadata": {
-        "$schema": "https://go.kicad.org/pcm/schemas/v1",
-        "identifier": "org.vinciecodrive.kicadlibs",
-        "type": "library",
-        "name": "VinciEcoDrive Libraries",
-        "description": "Symboles, empreintes et modèles 3D internes VED",
-        "author": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
-        "maintainer": { "name": "VinciEcoDrive", "contact": {"email": "contact@vinciecodrive.fr"} },
-        "license": "CC-BY-4.0",
-        "resources": { "homepage": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries" },
-        "versions": [
-          {
-            "version": "v0.3.0",
-            "status": "stable",
-            "kicad_version": "9.0",
-            "download_url": "https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-v0.3.0.zip",
-            "download_size": 7896,
-            "download_sha256": "77e9723fa9d8cd5ba9b0cb6c7a2822f890bcdd4904b8e9bd4dde9d162b310531",
-            "install_size": 7896
-          }
-        ]
-      }
+      "identifier": "org.vinciecodrive.kicadlibs",
+      "type": "library",
+      "name": "VinciEcoDrive Libraries",
+      "description": "Symboles, empreintes et modèles 3D internes VED",
+      "author": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
+      "maintainer": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
+      "license": "CC-BY-4.0",
+      "resources": { "homepage": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries" },
+      "versions": [
+        {
+          "version": "0.3.1",
+          "status": "stable",
+          "kicad_version": "9.0",
+          "download_url": "https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-0.3.1.zip",
+          "download_size": 6252,
+          "download_sha256": "dbfd565ee860850cec782ee5ee398426db6e413b8140ff68f17c272413a51039",
+          "install_size": 3644
+        }
+      ]
     }
   ]
 }
