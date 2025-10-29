@@ -52,7 +52,7 @@ jobs:
       - name: Generate repository.json
         run: |
           VERSION="${{ steps.ver.outputs.version }}"
-          URL="https://vinciecodrive.github.io/kicad-libs/vinciecodrive-libs-${VERSION}.zip"
+          URL="https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-${VERSION}.zip"
           cat > dist/repository.json << 'EOF'
           {
             "packages": [
@@ -66,7 +66,7 @@ jobs:
                   "author": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
                   "maintainer": { "name": "VinciEcoDrive", "contact": {"email": "contact@vinciecodrive.fr"} },
                   "license": "CC-BY-4.0",
-                  "resources": { "homepage": "https://github.com/VinciEcoDrive/kicad-libs" },
+                  "resources": { "homepage": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries" },
                   "versions": [
                     {
                       "version": "__VERSION__",
