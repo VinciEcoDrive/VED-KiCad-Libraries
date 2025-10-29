@@ -1,26 +1,22 @@
 {
   "$schema": "https://go.kicad.org/pcm/schemas/v1",
-  "packages": [
+  "identifier": "org.vinciecodrive.kicadlibs",
+  "type": "library",
+  "name": "VinciEcoDrive Libraries",
+  "description": "Symboles, empreintes et modèles 3D internes VED",
+  "author": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
+  "maintainer": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
+  "license": "CC-BY-4.0",
+  "resources": { "homepage": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries" },
+  "versions": [
     {
-      "identifier": "org.vinciecodrive.kicadlibs",
-      "type": "library",
-      "name": "VinciEcoDrive Libraries",
-      "description": "Symboles, empreintes et modèles 3D internes VED",
-      "author": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
-      "maintainer": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
-      "license": "CC-BY-4.0",
-      "resources": { "homepage": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries" },
-      "versions": [
-        {
-          "version": "0.1.2",
-          "status": "stable",
-          "kicad_version": "9.0",
-          "download_url": "https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-0.1.2.zip",
-          "download_size": 6252,
-          "download_sha256": "54e42267a9175efe986ca064fcec580f6dab7a8ac91d90fbbc7d7e38cb845ed9",
-          "install_size": 3644
-        }
-      ]
+      "version": "0.1.3",
+      "status": "stable",
+      "kicad_version": "9.0",
+      "download_url": "https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-0.1.3.zip",
+      "download_size": 6252,
+      "download_sha256": "a664fd5e1c8850158884daa71b505eba327d415aa3258510c19099e2a0a2d012",
+      "install_size": 3644
     }
   ]
 }
