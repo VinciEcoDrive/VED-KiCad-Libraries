@@ -12,12 +12,12 @@
       "resources": { "homepage": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries" },
       "versions": [
         {
-          "version": "0.3.1",
+          "version": "0.5.0",
           "status": "stable",
           "kicad_version": "9.0",
-          "download_url": "https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-0.3.1.zip",
+          "download_url": "https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-0.5.0.zip",
           "download_size": 6252,
-          "download_sha256": "dbfd565ee860850cec782ee5ee398426db6e413b8140ff68f17c272413a51039",
+          "download_sha256": "1dafdb420cf1b2ce7c99ec43dbe0df87e3a2616c00d5feea8d0e396cf70da9eb",
           "install_size": 3644
         }
       ]
