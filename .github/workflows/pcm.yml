@@ -1,0 +1,104 @@
+name: Build & Publish PCM package
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'   # déclenche sur v1.2.3
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # version = 1.2.3 quand le tag est v1.2.3, sinon 0.0.0-dev
+      - name: Extract version from tag
+        id: ver
+        run: |
+          if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
+            RAW="${GITHUB_REF#refs/tags/}"     # ex: v1.2.3
+            echo "version=${RAW#v}" >> $GITHUB_OUTPUT  # ex: 1.2.3
+          else
+            echo "version=0.0.0-dev" >> $GITHUB_OUTPUT
+          fi
+
+      # Chemin de ton paquet: ici "package". Change si besoin.
+      - name: Build zip from package
+        run: |
+          set -euo pipefail
+          cd package
+          zip -r ../vinciecodrive-libs-${{ steps.ver.outputs.version }}.zip . -x "*/.*" || true
+          cd ..
+
+      - name: Compute sizes and sha256
+        id: sums
+        run: |
+          set -euo pipefail
+          FILE="vinciecodrive-libs-${{ steps.ver.outputs.version }}.zip"
+          SIZE=$(stat -c%s "$FILE")
+          SHA=$(sha256sum "$FILE" | awk '{print $1}')
+          # Estimation install_size = taille décompressée du dossier "package/"
+          # (approximation raisonnable pour KiCad)
+          INSTALL_SIZE=$(du -sb package | awk '{print $1}')
+          echo "size=$SIZE" >> $GITHUB_OUTPUT
+          echo "sha=$SHA" >> $GITHUB_OUTPUT
+          echo "install_size=$INSTALL_SIZE" >> $GITHUB_OUTPUT
+
+      - name: Prepare dist/
+        run: |
+          mkdir -p dist
+          mv vinciecodrive-libs-${{ steps.ver.outputs.version }}.zip dist/
+
+      - name: Generate repository.json (PCM v1)
+        run: |
+          set -euo pipefail
+          VERSION="${{ steps.ver.outputs.version }}"
+          URL="https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-${VERSION}.zip"
+          SIZE="${{ steps.sums.outputs.size }}"
+          SHA="${{ steps.sums.outputs.sha }}"
+          INSTALL_SIZE="${{ steps.sums.outputs.install_size }}"
+
+          cat > dist/repository.json << EOF
+          {
+            "\$schema": "https://go.kicad.org/pcm/schemas/v1",
+            "packages": [
+              {
+                "identifier": "org.vinciecodrive.kicadlibs",
+                "type": "library",
+                "name": "VinciEcoDrive Libraries",
+                "description": "Symboles, empreintes et modèles 3D internes VED",
+                "author": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
+                "maintainer": { "name": "VinciEcoDrive", "contact": { "email": "contact@vinciecodrive.fr" } },
+                "license": "CC-BY-4.0",
+                "resources": { "homepage": "https://github.com/VinciEcoDrive/VED-KiCad-Libraries" },
+                "versions": [
+                  {
+                    "version": "${VERSION}",
+                    "status": "stable",
+                    "kicad_version": "9.0",
+                    "download_url": "${URL}",
+                    "download_size": ${SIZE},
+                    "download_sha256": "${SHA}",
+                    "install_size": ${INSTALL_SIZE}
+                  }
+                ]
+              }
+            ]
+          }
+          EOF
+
+      - name: Publish to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: dist
