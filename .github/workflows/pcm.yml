@@ -142,15 +142,19 @@ jobs:
           mkdir -p dist
           # copy readMe.md if it exists so it is published to GitHub Pages  
           if [ -f readMe.md ]; then
-            cp readMe.md dist/README.md
             cp readMe.md dist/index.md
-            echo "Copied readMe.md -> dist/README.md and dist/index.md"
+            echo "Copied readMe.md -> dist/index.md"
           else
             echo "No README found at repo root; skipping README copy"
           fi
 
+
           # copy icon if it exists so it is published to GitHub Pages
+        
           if [ -f package/resources/icon.png ]; then
+            if [ ! -d package/resources/ ]; then
+              mkdir -p package/resources/
+            fi
             cp package/resources/icon.png dist/icon.png
             echo "Copied package/resources/icon.png -> dist/icon.png"
           else
