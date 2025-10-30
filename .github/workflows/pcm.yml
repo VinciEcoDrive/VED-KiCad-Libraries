@@ -150,11 +150,11 @@ jobs:
           fi
 
           # copy icon if it exists so it is published to GitHub Pages
-          if [ -f package/ressources/icon.png ]; then
-            cp package/ressources/icon.png dist/icon.png
-            echo "Copied package/ressources/icon.png -> dist/icon.png"
+          if [ -f package/resources/icon.png ]; then
+            cp package/resources/icon.png dist/icon.png
+            echo "Copied package/resources/icon.png -> dist/icon.png"
           else
-            echo "No icon found at package/ressources/icon.png; skipping icon copy"
+            echo "No icon found at package/resources/icon.png; skipping icon copy"
           fi
 
       - name: Publish to gh-pages
