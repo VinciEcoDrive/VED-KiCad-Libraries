@@ -27,7 +27,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "PCM_VED_Connectors:RJ45_615008141321_Cat5"
+		(property "Footprint" "DEV_VED_Connectors:RJ45_615008141321_Cat5"
 			(at 0 0 0)
 			(effects
 				(font
