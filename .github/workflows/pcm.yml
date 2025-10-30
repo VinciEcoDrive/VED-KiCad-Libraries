@@ -151,14 +151,15 @@ jobs:
 
           # copy icon if it exists so it is published to GitHub Pages
         
-          if [ -f package/resources/icon.png ]; then
-            if [ ! -d dist/package/resources/ ]; then
-              mkdir -p dist/package/resources/
-            fi
-            cp package/resources/ icon.png dist/package/resources/icon.png
-            echo "Copied package/resources/icon.png -> dist/package/resources/icon.png"
+          ICON_SRC="package/resources/icon.png"
+          ICON_DST="dist/package/resources/icon.png"
+
+          if [ -f "$ICON_SRC" ]; then
+            mkdir -p "$(dirname "$ICON_DST")"
+            cp "$ICON_SRC" "$ICON_DST"
+            echo "Copied $ICON_SRC -> $ICON_DST"
           else
-            echo "No icon found at package/resources/icon.png; skipping icon copy"
+            echo "No icon found at $ICON_SRC; skipping icon copy"
           fi
 
       - name: Publish to gh-pages
