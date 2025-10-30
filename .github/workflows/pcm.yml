@@ -135,6 +135,28 @@ jobs:
           }
           EOF
 
+      - name: Copy README and icon to dist/
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p dist
+          # copy readMe.md if it exists so it is published to GitHub Pages  
+          if [ -f readMe.md ]; then
+            cp readMe.md dist/README.md
+            cp readMe.md dist/index.md
+            echo "Copied readMe.md -> dist/README.md and dist/index.md"
+          else
+            echo "No README found at repo root; skipping README copy"
+          fi
+
+          # copy icon if it exists so it is published to GitHub Pages
+          if [ -f package/ressources/icon.png ]; then
+            cp package/ressources/icon.png dist/icon.png
+            echo "Copied package/ressources/icon.png -> dist/icon.png"
+          else
+            echo "No icon found at package/ressources/icon.png; skipping icon copy"
+          fi
+
       - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:

@@ -24,7 +24,7 @@ Quick overview
 
 Note: GitHub Pages may take ~2–10 minutes to publish a new release.
 
-## �️ Install (advanced) — manual library tables
+## 💻 Install (advanced) — manual library tables
 
 If you prefer to use the repo directly without PCM, follow these manual steps to add the libraries to KiCad.
 
@@ -59,7 +59,7 @@ Notes
 - Using an environment path keeps library entries portable across machines. If multiple team members use the same convention, everyone can reuse the same global table entries.
 - When editing tables, prefer Global if the libraries are used across several projects; use Project tables for project-local overrides.
 
-## �📦 Release a new version
+## 📦 Release a new version
 
 Follow these steps to publish a release that users can install via PCM:
 
@@ -94,5 +94,3 @@ Follow these steps to publish a release that users can install via PCM:
 - CI / repo maintainer: Théo HARDY — [theo.hardy@edu.devinci.fr](mailto:theo.hardy@edu.devinci.fr)
 
 ---
-
-Thanks for using VED KiCad Libraries! If you'd like additional badges, a demo GIF, or a contributing guide, tell me what you'd like and I can add it. ✨
