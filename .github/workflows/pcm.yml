@@ -148,15 +148,17 @@ jobs:
             echo "No README found at repo root; skipping README copy"
           fi
 
-
           # copy icon if it exists so it is published to GitHub Pages
-        
           ICON_SRC="package/resources/icon.png"
           ICON_DST="dist/package/resources/icon.png"
-
           if [ -f "$ICON_SRC" ]; then
-            mkdir -p "$(dirname "$ICON_DST")"
-            cp "$ICON_SRC" "$ICON_DST"
+            # prefer install -D to create parent directories atomically; fall back to mkdir + cp
+            if command -v install >/dev/null 2>&1; then
+              install -D "$ICON_SRC" "$ICON_DST"
+            else
+              mkdir -p "$(dirname "$ICON_DST")"
+              cp "$ICON_SRC" "$ICON_DST"
+            fi
             echo "Copied $ICON_SRC -> $ICON_DST"
           else
             echo "No icon found at $ICON_SRC; skipping icon copy"
