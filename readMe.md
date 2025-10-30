@@ -20,9 +20,8 @@ Quick overview
 ```
 https://vinciecodrive.github.io/VED-KiCad-Libraries/repository.json
 ```
-
-1. Ensure the repository is enabled, open Plugin & Content Manager, find “VinciEcoDrive Libraries” and click Install.
-2. After a release, click Refresh in PCM to see updates.
+4. Ensure the repository is enabled, open Plugin & Content Manager, find “VinciEcoDrive Libraries” and click Install.
+5. After a release, click Refresh in PCM to see updates.
 
 Note: GitHub Pages may take ~2–10 minutes to publish a new release.
 
