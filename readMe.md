@@ -96,7 +96,7 @@ Follow these steps to publish a release that users can install via PCM:
 
 ## 📜 Licence
 
-ThiThis work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 You are free to:
 
