@@ -316,7 +316,7 @@
 		(uuid "65d1bdf8-30dc-4c67-836e-45e7bc399f25")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_VED_LIB}/3dmodels/VED_Connectors/RJ45-615008141321.stp"
+	(model "${KICAD_ORG_VINCIECODRIVE_KICADLIBS_DIR}/3dmodels/VED_Connectors/RJ45-615008141321.stp"
 		(offset
 			(xyz 0 0 6.5)
 		)

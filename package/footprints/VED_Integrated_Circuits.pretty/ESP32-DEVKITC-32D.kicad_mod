@@ -535,7 +535,7 @@
 		(uuid "43db8cb3-a90d-400b-8a34-e489b1acdb96")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_VED_LIB}/3dmodels/VED_Integrated_Circuits/ESP32-DEVKITC-32D-269445.STEP"
+	(model "${KICAD_ORG_VINCIECODRIVE_KICADLIBS_DIR}/3dmodels/VED_Integrated_Circuits/ESP32-DEVKITC-32D-269445.STEP"
 		(offset
 			(xyz 0 0 3)
 		)
