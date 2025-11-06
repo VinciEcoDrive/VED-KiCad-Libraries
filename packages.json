@@ -28,13 +28,13 @@
       },
       "versions": [
         {
-          "version": "1.0.3",
+          "version": "1.0.4",
           "status": "stable",
           "kicad_version": "9.0",
-          "download_url": "https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-1.0.3.zip",
-          "download_size": 1398557,
-          "download_sha256": "33881d1ad5c070ec4be75d496f9c229296363eea68fbfde4146dd97b290690fa",
-          "install_size": 8180339
+          "download_url": "https://vinciecodrive.github.io/VED-KiCad-Libraries/vinciecodrive-libs-1.0.4.zip",
+          "download_size": 1398556,
+          "download_sha256": "3287946e07ad2fb131b22258f34acdda21c3fecffd6cd296d561e445acf3e532",
+          "install_size": 8180353
         }
       ]
     }
