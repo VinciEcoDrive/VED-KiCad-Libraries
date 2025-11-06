@@ -94,4 +94,13 @@ Follow these steps to publish a release that users can install via PCM:
 - For library content updates: coordinate with the team working on the specific symbol/footprint.
 - CI / repo maintainer: Théo HARDY — [theo.hardy@edu.devinci.fr](mailto:theo.hardy@edu.devinci.fr)
 
----
+## 📜 Licence
+
+This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to:
+
+* **Share** — copy and redistribute the material in any medium or format for any purpose, even commercially.
+* **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
+
+
