@@ -1,4 +1,4 @@
-(footprint "RJ45_615008141321_Cat5"
+(footprint "RJ45-615008141321-Cat5"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -37,7 +37,7 @@
 			)
 		)
 	)
-	(property "Description" "RJ45_Wurth_615008141321_Cat5"
+	(property "Description" "RJ45-Wurth-615008141321-Cat5"
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
@@ -316,7 +316,7 @@
 		(uuid "65d1bdf8-30dc-4c67-836e-45e7bc399f25")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_ORG_VINCIECODRIVE_KICADLIBS_DIR}/3dmodels/VED_Connectors/RJ45-615008141321.stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/org_vinciecodrive_kicadlibs/VED_Connectors/RJ45-615008141321.stp"
 		(offset
 			(xyz 0 0 6.5)
 		)
