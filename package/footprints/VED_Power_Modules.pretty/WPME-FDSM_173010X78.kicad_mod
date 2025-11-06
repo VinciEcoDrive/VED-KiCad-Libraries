@@ -1,0 +1,186 @@
+(footprint "WPME-FDSM_173010X78"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "WPME-FDSM_SIP-3")
+	(property "Reference" "REF**"
+		(at 0 -5.635 0)
+		(layer "F.SilkS")
+		(uuid "babc5048-3bbc-43c3-8db3-5eec0b20da5a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WPME-FDSM_SIP-3"
+		(at 0 5.865 0)
+		(layer "F.Fab")
+		(uuid "bfc64479-1f2d-4dfd-a83e-7bf25eb3cadf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3ab299e0-b3c3-4de0-999f-c9b2da99f5ec")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4bff7385-e71d-46cb-b3d6-ce78e4aed928")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -5.9 -4.35)
+		(end 5.9 -4.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "04358f5d-195a-4d95-8429-d01c2ed05043")
+	)
+	(fp_line
+		(start -5.9 4.35)
+		(end -5.9 -4.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "12c9aee5-0503-4be1-b66c-a2b2f2e19df9")
+	)
+	(fp_line
+		(start 5.9 -4.35)
+		(end 5.9 4.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "902d60f4-475d-4f23-83c5-0babcd0c61a4")
+	)
+	(fp_line
+		(start 5.9 4.35)
+		(end -5.9 4.35)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "96b9f0ee-0d98-4a81-a324-2af4fc6f7a89")
+	)
+	(fp_circle
+		(center -5 5.5)
+		(end -4.8 5.5)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "617dfd70-21cf-428d-8984-bdf1865833af")
+	)
+	(fp_poly
+		(pts
+			(xy -6.1 -4.55) (xy 6.1 -4.55) (xy 6.1 4.55) (xy -6.1 4.55)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.CrtYd")
+		(uuid "a7f2feb3-0183-406d-8571-7f79119f327d")
+	)
+	(fp_line
+		(start -5.8 -4.25)
+		(end 5.8 -4.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "060c3ace-588d-4bd2-9486-c6af425037ca")
+	)
+	(fp_line
+		(start -5.8 4.25)
+		(end -5.8 -4.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "12ef86fd-c5e8-43b7-a986-f8fb11339c6f")
+	)
+	(fp_line
+		(start 5.8 4.25)
+		(end -5.8 4.25)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cd090793-b920-46f2-aecf-098d78116107")
+	)
+	(pad "1" thru_hole circle
+		(at -2.54 2.25)
+		(size 1.508 1.508)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "87379807-ee87-41f2-92b2-b1f0c6355749")
+	)
+	(pad "2" thru_hole circle
+		(at 0 2.25)
+		(size 1.508 1.508)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "6ba1f962-ee9d-47d1-a844-8f0627c983bb")
+	)
+	(pad "3" thru_hole circle
+		(at 2.54 2.25)
+		(size 1.508 1.508)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.102)
+		(uuid "2a90e216-2777-4e81-82fd-26a481fc3ffa")
+	)
+	(embedded_fonts no)
+	(model "C:/Users/tasni/Documents/KiCad/Pièce Power Supply/WPME-FDSM_SIP-3/WPME-FDSM_SIP-3.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
