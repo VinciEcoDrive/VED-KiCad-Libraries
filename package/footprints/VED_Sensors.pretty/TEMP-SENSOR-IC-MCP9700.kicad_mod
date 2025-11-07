@@ -1,0 +1,239 @@
+(footprint "TEMP-SENSOR-IC-MCP9700"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "MCP9700-E/TO ")
+	(property "Reference" "REF**"
+		(at 1.27 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d4013d3e-21fd-47f5-9330-6231a508c1d4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TEMP-SENSOR-IC-MCP9700"
+		(at 1.27 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "953bafac-466d-4e83-8714-08dfa3bf1da3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e077c052-2917-45a9-9b6b-f3e9a63f0716")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dd6bb261-0b0c-4268-9bc4-75ae3520cfed")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -0.793506 1.7145)
+		(end 3.333506 1.7145)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cd70cf49-20ed-4c4d-9e20-2369914ae2d7")
+	)
+	(fp_arc
+		(start -0.894167 1.664936)
+		(mid 0.39069 -2.585042)
+		(end 4.0005 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "57359d94-dbc7-44ca-a4ae-e15d11a04b76")
+	)
+	(fp_arc
+		(start 4.0005 0.000001)
+		(mid 3.855041 0.879313)
+		(end 3.434164 1.66494)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aeb18378-992f-499e-946c-d02ae2218d94")
+	)
+	(fp_circle
+		(center -3.2385 0)
+		(end -3.1115 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "fa96f254-4598-4cc1-b333-9c3aa82d45ab")
+	)
+	(fp_line
+		(start -1.5875 -2.8575)
+		(end 4.1275 -2.8575)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "14d20f1e-e5fd-4818-9cb3-00e4b949c4ea")
+	)
+	(fp_line
+		(start -1.5875 1.8415)
+		(end -1.5875 -2.8575)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "63bfa530-a1be-485c-adcd-ea0df2eae296")
+	)
+	(fp_line
+		(start 4.1275 -2.8575)
+		(end 4.1275 1.8415)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e02d3fa6-11ff-476f-92b7-951ec2238baa")
+	)
+	(fp_line
+		(start 4.1275 1.8415)
+		(end -1.5875 1.8415)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "680d43a3-7b9b-490b-862b-e8e8953aa2b2")
+	)
+	(fp_line
+		(start -0.793506 1.5875)
+		(end 3.333506 1.5875)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "889948ec-865c-4ba5-a851-2990205cd5ac")
+	)
+	(fp_line
+		(start -0.254 0)
+		(end 0.254 0)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3603d9e4-28b3-42ad-b405-5b07f9bc2382")
+	)
+	(fp_line
+		(start 0 0.254)
+		(end 0 -0.254)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7c5b5170-697a-411b-8abe-c4e585979dab")
+	)
+	(fp_arc
+		(start -0.793507 1.587499)
+		(mid 1.270001 -2.6035)
+		(end 3.333506 1.5875)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "172e7296-b712-44b4-8716-e74d72c6a07c")
+	)
+	(fp_circle
+		(center -1.0795 0)
+		(end -0.9525 0)
+		(stroke
+			(width 0.0254)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "da257b2c-eb57-4f71-a3ed-dd455c136f15")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 1.27 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "5b8160a5-0193-4d4b-87a8-91cd4905e52f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.4986 1.4986)
+		(drill 0.9906)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e0a1eaa8-7d9f-4cd7-9bf5-8a6d21ba7917")
+	)
+	(pad "2" thru_hole circle
+		(at 1.27 0)
+		(size 0.9652 0.9652)
+		(drill 0.4572)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2fb44351-c7e5-4016-ab16-cad5b66da45d")
+	)
+	(pad "3" thru_hole circle
+		(at 2.54 0)
+		(size 0.9652 0.9652)
+		(drill 0.4572)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "62407675-560b-4f0d-9b88-607c12ecee9e")
+	)
+	(embedded_fonts no)
+	(model "C:/Users/nicol/Downloads/MCP9700-E_TO/MCP9700-E_TO.step"
+		(offset
+			(xyz 1.25 0.3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
