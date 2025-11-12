@@ -27,7 +27,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "PCM_VED_Power_Module:Fixed-Step-Down-Regulator-173951275"
+		(property "Footprint" "PCM_VED_Power_Modules:Fixed-Step-Down-Regulator-173951275"
 			(at -35.56 -30.988 0)
 			(effects
 				(font
