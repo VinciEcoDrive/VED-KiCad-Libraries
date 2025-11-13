@@ -6,9 +6,9 @@
   },
   "name": "VinciEcoDrive repository",
   "packages": {
-    "sha256": "b31c79c5365b507a417caa7e7553cef78181eecf124b7cc115a630f90af10b3b",
-    "update_time_utc": "2025-11-12 16:52:12",
-    "update_timestamp": 1762966332,
+    "sha256": "065d642a075f71bc43242fd8f5bcfc348364ed9c8f87d8c8873d81c8e0d11889",
+    "update_time_utc": "2025-11-13 14:42:17",
+    "update_timestamp": 1763044937,
     "url": "https://vinciecodrive.github.io/VED-KiCad-Libraries/packages.json"
   }
 }
