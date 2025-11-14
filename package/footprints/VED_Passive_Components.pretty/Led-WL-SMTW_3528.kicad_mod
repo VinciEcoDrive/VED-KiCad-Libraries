@@ -1,4 +1,4 @@
-(footprint "Led-WL-SMTW_3528"
+(footprint "LED-WL-SMTW_3528"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -14,7 +14,7 @@
 			)
 		)
 	)
-	(property "Value" "Led-WL-SMTW_3528"
+	(property "Value" "LED-WL-SMTW_3528"
 		(at 0 2.492 0)
 		(layer "F.Fab")
 		(uuid "4b6e06fc-7898-49dd-afa3-bd6ef7a519bd")

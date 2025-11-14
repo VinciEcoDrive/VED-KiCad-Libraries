@@ -1,4 +1,4 @@
-(footprint "Diode-MBRB1045T4G"
+(footprint "DIODE-MBRB1045T4G"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" "Diode_MBRB1045T4G"
+	(property "Value" "DIODE-MBRB1045T4G"
 		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
