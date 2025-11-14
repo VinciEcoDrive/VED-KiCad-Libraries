@@ -60,29 +60,10 @@ Notes
 - Using an environment path keeps library entries portable across machines. If multiple team members use the same convention, everyone can reuse the same global table entries.
 - When editing tables, prefer Global if the libraries are used across several projects; use Project tables for project-local overrides.
 
-## 📦 Release a new version
+## 🤝 Contributing
 
-Follow these steps to publish a release that users can install via PCM:
+To contribute, please first follow the [advanced installation instructions](#-install-advanced--manual-library-tables) and see [Contributing Guide](CONTRIBUTING.md)
 
-1. Prepare `main`
-   - Merge all PRs targeted for the release.
-   - Update `CHANGELOG.md` with highlights.
-
-2. Create a tag (use [semver](https://semver.org/)):
-
-   - Example: `git tag -a v1.3.0 -m "VinciEcoDrive libs 1.3.0"`
-   - Push: `git push origin v1.3.0`
-
-3. CI will (automated):
-   - Zip `package/` into `vinciecodrive-libs-<version>.zip`
-   - Generate `packages.json` and `repository.json`
-   - Publish artifacts to the `gh-pages` branch
-
-4. Verify deployment URLs
-   - repository.json: https://vinciecodrive.github.io/VED-KiCad-Libraries/repository.json
-   - packages.json:   https://vinciecodrive.github.io/VED-KiCad-Libraries/packages.json
-
-5. Tell users to Refresh in KiCad PCM and update the package.
 
 ## 🧪 Tips & troubleshooting
 
@@ -91,8 +72,10 @@ Follow these steps to publish a release that users can install via PCM:
 
 ## 🤝 Contact
 
-- For library content updates: coordinate with the team working on the specific symbol/footprint.
-- CI / repo maintainer: Théo HARDY — [theo.hardy@edu.devinci.fr](mailto:theo.hardy@edu.devinci.fr)
+- If you are a member of Vinci Eco Drive, use the project’s primary team communication channel for general questions, library requests and design reviews.
+
+- CI / repo maintainer — Théo HARDY: theo.hardy@edu.devinci.fr  
+   - Preferred workflow: open a GitHub Issue for bugs, feature requests or installation problems; link PRs to issues when relevant.  
 
 ## 📜 Licence
 
