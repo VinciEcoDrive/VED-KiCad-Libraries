@@ -1,4 +1,4 @@
-(footprint "PDIP8_300MC_MCH"
+(footprint "TC4427ACPA-PDIP8-300MC-MCH"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" "TC4427ACPA"
+	(property "Value" "TC4427ACPA-PDIP8-300MC-MCH"
 		(at 3.81 3.81 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -776,12 +776,12 @@
 		(uuid "a670cce3-e79b-4671-b7cd-426778c413c2")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_VED_LIB}/3dmodels/VED_Integrated_Circuits/TC4427ACPA.stp"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/org_vinciecodrive_kicadlibs/VED_Integrated_Circuits/TC4427ACPA.stp"
 		(offset
-			(xyz 3.9 -3.7 0)
+			(xyz 3.8 -3.8 0)
 		)
 		(scale
-			(xyz 0.94 1 1)
+			(xyz 1 1 1)
 		)
 		(rotate
 			(xyz -0 -0 -0)

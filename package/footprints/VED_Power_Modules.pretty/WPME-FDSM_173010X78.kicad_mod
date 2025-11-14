@@ -172,15 +172,15 @@
 		(uuid "2a90e216-2777-4e81-82fd-26a481fc3ffa")
 	)
 	(embedded_fonts no)
-	(model "C:/Users/tasni/Documents/KiCad/Pièce Power Supply/WPME-FDSM_SIP-3/WPME-FDSM_SIP-3.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/org_vinciecodrive_kicadlibs/VED_Power_Modules/WPME-FDSM_SIP-3.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz 0 0 5.3)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -0)
 		)
 	)
 )

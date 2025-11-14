@@ -1,4 +1,4 @@
-(footprint "DATA-CONNECTION-61900811021"
+(footprint "WR-WTB-1x08-2.54mm-Horizontal-61900811021"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -14,7 +14,7 @@
 			)
 		)
 	)
-	(property "Value" "DATA-CONNECTION-61900811021"
+	(property "Value" "WR-WTB-1x08-2.54mm-Horizontal-61900811021"
 		(at -25.5 4.5 0)
 		(layer "F.Fab")
 		(uuid "988f1a52-9ab3-4c6c-8a8c-0a99d366be85")

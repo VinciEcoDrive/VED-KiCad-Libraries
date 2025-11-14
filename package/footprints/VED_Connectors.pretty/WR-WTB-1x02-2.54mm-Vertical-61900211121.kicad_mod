@@ -1,4 +1,4 @@
-(footprint "JUMPER-WR-WTB-61900211121"
+(footprint "WR-WTB-1x02-2.54mm-Vertical-61900211121"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -14,7 +14,7 @@
 			)
 		)
 	)
-	(property "Value" "JUMPER-WR-WTB-61900211121"
+	(property "Value" "WR-WTB-1x02-2.54mm-Vertical-61900211121"
 		(at 10.485 0.865 0)
 		(layer "F.Fab")
 		(uuid "0773ef6e-60ef-4e11-9083-699760a2e319")
