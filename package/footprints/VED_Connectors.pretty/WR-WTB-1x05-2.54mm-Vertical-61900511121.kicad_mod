@@ -329,4 +329,15 @@
 		(uuid "dd398395-d1d6-4fd0-9dea-48db80121604")
 	)
 	(embedded_fonts no)
+	(model "${KICAD9_3RD_PARTY}/3dmodels/org_vinciecodrive_kicadlibs/VED_Connectors/61900511121.stp"
+		(offset
+			(xyz 0 0 5.8)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
 )
