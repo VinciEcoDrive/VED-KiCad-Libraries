@@ -256,7 +256,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "DEV_VED_Power_Modules:MOSFET-IRF3808STRLPBF"
+		(property "Footprint" "PCM_VED_Power_Modules:MOSFET-IRF3808STRLPBF"
 			(at 0 12.7 0)
 			(effects
 				(font
