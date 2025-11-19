@@ -1,6 +1,15 @@
-![VEDLogo](package/resources/icon.png)
+<table>
+   <tr>
+      <td style="vertical-align:middle;padding-right:12px">
+         <img src="package/resources/icon.png" alt="VED Logo" width="40" />
+      </td>
+      <td style="vertical-align:middle">
+         <h1> VED KiCad Libraries</h1>
+      </td>
+   </tr>
+</table>
 
-# 🚀 VED KiCad Libraries
+[![Latest Tag](https://img.shields.io/github/v/tag/VinciEcoDrive/VED-KiCad-Libraries)](https://github.com/VinciEcoDrive/VED-KiCad-Libraries/tags)
 
 Welcome — this repo contains the curated KiCad 9-compatible libraries used by the VinciEcoDrive team. It's packaged for easy installation via KiCad's Plugin & Content Manager (PCM).
 
