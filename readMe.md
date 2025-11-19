@@ -1,10 +1,10 @@
-<table>
+<table style="border-collapse:collapse;border:none;background:transparent;">
    <tr>
-      <td style="vertical-align:middle;padding-right:12px">
+      <td style="vertical-align:middle;border:none;background:transparent;">
          <img src="package/resources/icon.png" alt="VED Logo" width="40" />
       </td>
-      <td style="vertical-align:middle">
-         <h1> VED KiCad Libraries</h1>
+      <td style="vertical-align:middle;border:none;background:transparent;">
+         <h1 style="margin:0">VED KiCad Libraries</h1>
       </td>
    </tr>
 </table>
