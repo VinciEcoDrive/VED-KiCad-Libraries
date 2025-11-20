@@ -29,6 +29,29 @@ jobs:
             echo "version=0.0.0-dev" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Verify commit differs from previous tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          CURRENT_COMMIT=$(git rev-parse HEAD)
+          
+          # Get the previous tag
+          PREVIOUS_TAG=$(git tag -l 'v*.*.*' --sort=-version:refname | head -2 | tail -1)
+          
+          if [ -z "$PREVIOUS_TAG" ]; then
+            echo "✓ No previous tag found (first release)"
+            exit 0
+          fi
+          
+          PREVIOUS_COMMIT=$(git rev-list -n 1 "$PREVIOUS_TAG")
+          
+          if [ "$CURRENT_COMMIT" = "$PREVIOUS_COMMIT" ]; then
+            echo "✗ ERROR: Current commit ($CURRENT_COMMIT) is the same as previous tag commit ($PREVIOUS_COMMIT). Check that you have updated main branch before tagging a new release."
+            exit 1
+          fi
+          
+          echo "✓ Commit check passed: $PREVIOUS_TAG ($PREVIOUS_COMMIT) → current ($CURRENT_COMMIT)"
+
       - name: Build ZIP from package/
         shell: bash
         run: |
@@ -135,34 +158,6 @@ jobs:
           }
           EOF
 
-      - name: Copy README and icon to dist/
-        if: always()
-        shell: bash
-        run: |
-          mkdir -p dist
-          # copy readMe.md if it exists so it is published to GitHub Pages  
-          if [ -f readMe.md ]; then
-            cp readMe.md dist/index.md
-            echo "Copied readMe.md -> dist/index.md"
-          else
-            echo "No README found at repo root; skipping README copy"
-          fi
-
-          # copy icon if it exists so it is published to GitHub Pages
-          ICON_SRC="package/resources/icon.png"
-          ICON_DST="dist/package/resources/icon.png"
-          if [ -f "$ICON_SRC" ]; then
-            # prefer install -D to create parent directories atomically; fall back to mkdir + cp
-            if command -v install >/dev/null 2>&1; then
-              install -D "$ICON_SRC" "$ICON_DST"
-            else
-              mkdir -p "$(dirname "$ICON_DST")"
-              cp "$ICON_SRC" "$ICON_DST"
-            fi
-            echo "Copied $ICON_SRC -> $ICON_DST"
-          else
-            echo "No icon found at $ICON_SRC; skipping icon copy"
-          fi
 
       - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v3
