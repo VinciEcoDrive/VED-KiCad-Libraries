@@ -454,7 +454,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DEV_VED_Sensors:TEMP-SENSOR-IC-MCP9700"
+		(property "Footprint" "PCM_VED_Sensors:TEMP-SENSOR-IC-MCP9700"
 			(at 0 0 0)
 			(effects
 				(font
