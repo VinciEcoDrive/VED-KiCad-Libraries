@@ -227,4 +227,15 @@
 		(uuid "be54e4ee-fc67-4202-985b-11d6a4422d94")
 	)
 	(embedded_fonts no)
+	(model "${KICAD_VED_LIB}/3dmodels/VED_Passive_Components/DIODE-GF1A-E367A.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
