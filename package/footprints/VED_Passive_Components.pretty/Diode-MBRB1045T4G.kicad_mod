@@ -1,4 +1,4 @@
-(footprint "DIODE-MBRB1045T4G"
+(footprint "Diode-MBRB1045T4G"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -520,4 +520,15 @@
 		(uuid "66d0d117-09e1-49ed-84ab-add6baf5911e")
 	)
 	(embedded_fonts no)
+	(model "${KICAD_VED_LIB}/3dmodels/VED_Passive_Components/DIODE-MBRB1045T4G.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

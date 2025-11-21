@@ -273,15 +273,15 @@
 		(uuid "9b1f3f6e-93fb-451c-b88c-3822433fad5f")
 	)
 	(embedded_fonts no)
-	(model "eec.models/Infineon_-_IRF3808STRLPBF.step"
+	(model "${KICAD_VED_LIB}/3dmodels/VED_Power_Modules/MOSFET-IRF3808STRLPBF.STEP"
 		(offset
-			(xyz 0 0 0)
+			(xyz -1 0 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 90)
+			(xyz -90 -0 -0)
 		)
 	)
 )

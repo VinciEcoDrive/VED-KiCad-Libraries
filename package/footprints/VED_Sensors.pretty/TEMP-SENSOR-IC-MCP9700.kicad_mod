@@ -236,4 +236,15 @@
 		(uuid "4285f91b-4380-4af0-b085-6ce876b6662d")
 	)
 	(embedded_fonts no)
+	(model "${KICAD_VED_LIB}/3dmodels/VED_Sensors/TEMP-SENSOR-IC-MCP9700.stp"
+		(offset
+			(xyz 2.5 0.5 3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 -0 -180)
+		)
+	)
 )

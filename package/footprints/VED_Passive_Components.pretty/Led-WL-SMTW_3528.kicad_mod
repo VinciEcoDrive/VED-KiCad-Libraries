@@ -1,4 +1,4 @@
-(footprint "LED-WL-SMTW_3528"
+(footprint "Led-WL-SMTW_3528"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -249,4 +249,15 @@
 		(uuid "aae5c191-46dc-4984-8d47-cd0b713f9c29")
 	)
 	(embedded_fonts no)
+	(model "${KICAD_VED_LIB}/3dmodels/VED_Passive_Components/LED-WL-SMTW_3528.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
