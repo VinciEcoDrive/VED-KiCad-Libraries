@@ -216,4 +216,15 @@
 		(uuid "48a45474-3d3b-49d1-a12e-296b4bd62074")
 	)
 	(embedded_fonts no)
+	(model "${KICAD_VED_LIB}/3dmodels/VED_Power_Modules/RELAY-SRD-48VDC-SD-C.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
 )

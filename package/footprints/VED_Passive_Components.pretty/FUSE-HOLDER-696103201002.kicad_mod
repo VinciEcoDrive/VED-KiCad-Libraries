@@ -181,4 +181,15 @@
 		(uuid "d414e86a-02f4-4de0-aa38-c4ecf47a8c98")
 	)
 	(embedded_fonts no)
+	(model "${KICAD_VED_LIB}/3dmodels/VED_Passive_Components/FUSE-HOLDER-696103201002.stp"
+		(offset
+			(xyz 11 -5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 -180 90)
+		)
+	)
 )

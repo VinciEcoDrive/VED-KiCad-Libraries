@@ -259,4 +259,15 @@
 		(uuid "a76c202e-0368-4c4a-b046-3bd20821d57e")
 	)
 	(embedded_fonts no)
+	(model "${KICAD_VED_LIB}/3dmodels/VED_Power_Modules/RELAY-PB134012.stp"
+		(offset
+			(xyz -7.5 5 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 90)
+		)
+	)
 )
