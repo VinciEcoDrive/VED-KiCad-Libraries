@@ -46,7 +46,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "FIXED-STEP-DOWN-REGULATOR-173951275"
+		(property "Description" "non-isolated DC-DC module, 18–74.5 V input, fixed 12 V/0.5 A output"
 			(at 0 0 0)
 			(effects
 				(font
@@ -276,7 +276,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IRF3808STRLPBF"
+		(property "Description" "N-channel HEXFET MOSFET, 75 V V_DS, 106 A continuous"
 			(at 0 0 0)
 			(effects
 				(font
@@ -980,7 +980,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "2-1415030-1"
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FPB%7F0411%7Fpdf%7FEnglish%7FENG_DS_PB_0411.pdf%7F2-1415030-1"
 			(at 0 0 0)
 			(effects
 				(font
@@ -990,7 +990,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "general-purpose power relay, 12 V DC coil, SPST Normally-Open (1 Form A), 10 A contact"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "TE Connectivity"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1340,7 +1349,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.alldatasheet.com/datasheet-pdf/view/1132047/SONGLERELAY/SRD-48VDC-SD-C.html"
 			(at 0 0 0)
 			(effects
 				(font
@@ -1349,7 +1358,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Sub-miniature high-power relay, 48 V DC coil, SPDT (1 Form C), contact rating up to 10 A / 250 VAC"
 			(at 0 0 0)
 			(effects
 				(font

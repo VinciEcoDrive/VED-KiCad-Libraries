@@ -1,4 +1,4 @@
-(footprint "CURRENT-SENSOR-ACS770"
+(footprint "CURRENT-SENSOR-ACS770LCB-100U-PFF-T"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -16,7 +16,7 @@
 			)
 		)
 	)
-	(property "Value" "CURRENT-SENSOR-ACS770"
+	(property "Value" "CURRENT-SENSOR-ACS770LCB-100U-PFF-T"
 		(at 2 -5.5 0)
 		(unlocked yes)
 		(layer "F.Fab")
