@@ -537,7 +537,7 @@
 	(embedded_fonts no)
 	(model "${KICAD9_3RD_PARTY}/3dmodels/org_vinciecodrive_kicadlibs/VED_Integrated_Circuits/ESP32-DEVKITC-32D-269445.STEP"
 		(offset
-			(xyz 0 0 3)
+			(xyz 0 0 0)
 		)
 		(scale
 			(xyz 1 1 1)

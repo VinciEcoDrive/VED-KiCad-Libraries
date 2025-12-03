@@ -1,9 +1,9 @@
-(footprint "WPME-FDSM_173010X78"
+(footprint "WPME-FDSM-173010X78"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(tags "WPME-FDSM_SIP-3")
+	(tags "WPME-FDSM-173010X78")
 	(property "Reference" "REF**"
 		(at 0 -5.635 0)
 		(layer "F.SilkS")
@@ -15,7 +15,7 @@
 			)
 		)
 	)
-	(property "Value" "WPME-FDSM_SIP-3"
+	(property "Value" "WPME-FDSM-173010X78"
 		(at 0 5.865 0)
 		(layer "F.Fab")
 		(uuid "bfc64479-1f2d-4dfd-a83e-7bf25eb3cadf")
