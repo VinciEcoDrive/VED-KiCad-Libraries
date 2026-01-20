@@ -1,0 +1,338 @@
+(footprint "Wurth-Shielded-Power-Inductor-1260"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -7.635 0)
+		(layer "F.SilkS")
+		(uuid "67fd391f-6b12-4839-b85a-5ee849c14737")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Wurth-Shielded-Power-Inductor-1260"
+		(at 0 7.365 0)
+		(layer "F.Fab")
+		(uuid "5d758275-e631-4594-a384-0166bf12428b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "44a6f2c4-df88-413e-b8ab-1f7353e56812")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fea95019-4f7c-4958-be1e-d3a044ce965a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -6.1 -4.25)
+		(end -6.1 5.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ec8c8c57-fac0-4d82-93f3-d95394d77d19")
+	)
+	(fp_line
+		(start -6.1 -4.25)
+		(end -4.25 -6.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7cc9d04f-c2b8-4ced-8336-15c8530e7bbc")
+	)
+	(fp_line
+		(start -5.05 6.1)
+		(end -6.1 5.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "bfb65e67-0dcd-4efa-9f80-00738a96907d")
+	)
+	(fp_line
+		(start -5.05 6.1)
+		(end -3.1 6.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5aa1effa-301b-4160-852d-72a2f4a79ae0")
+	)
+	(fp_line
+		(start -3.1 -6.1)
+		(end -4.25 -6.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "54fd5cf6-85cc-42bb-983e-629d12311b03")
+	)
+	(fp_line
+		(start 3.1 -6.1)
+		(end 5.05 -6.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6265483e-3171-462a-97cf-7b6364e55447")
+	)
+	(fp_line
+		(start 4.5 6.1)
+		(end 3.1 6.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "81150f6f-545b-4253-8e5a-b43aeffcf46f")
+	)
+	(fp_line
+		(start 5.05 -6.1)
+		(end 6.1 -5.05)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2b60897e-0176-4f64-824e-e58632e43f5b")
+	)
+	(fp_line
+		(start 6.1 -5.05)
+		(end 6.1 4.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5cc036d9-b23e-479b-a37c-3fa7660d2639")
+	)
+	(fp_arc
+		(start 6.1 4.5)
+		(mid 5.631371 5.631371)
+		(end 4.5 6.1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "427c8972-08c3-475f-ac1a-80dcab52f142")
+	)
+	(fp_circle
+		(center -3.7 -6.8)
+		(end -3.5 -6.8)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "87eecfac-41c7-4d7c-b852-344c2ff03e3f")
+	)
+	(fp_poly
+		(pts
+			(xy 6.3 -6.6) (xy 6.3 6.6) (xy -6.3 6.6) (xy -6.3 -6.6)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.CrtYd")
+		(uuid "f6e79300-9ee2-43eb-9963-e7dec790719b")
+	)
+	(fp_line
+		(start -6 -4.2)
+		(end -6 5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d25956f9-5812-492b-ac47-60f193772e6f")
+	)
+	(fp_line
+		(start -6 -4.2)
+		(end -4.2 -6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cb2db046-8b8a-448a-b3bc-6166b9fcdf95")
+	)
+	(fp_line
+		(start -5 6)
+		(end -6 5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "7525e2e4-5f51-40b9-ab0f-925eeb771682")
+	)
+	(fp_line
+		(start -5 6)
+		(end 4.5 6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "0285328e-acf2-433d-bcad-218e221084fd")
+	)
+	(fp_line
+		(start 5 -6)
+		(end -4.2 -6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a158c071-1bb1-4db0-95b8-50eb6cfafecd")
+	)
+	(fp_line
+		(start 5 -6)
+		(end 6 -5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "cb7c3453-60f4-4ca1-a5e9-49f85b631ad7")
+	)
+	(fp_line
+		(start 6 -5)
+		(end 6 4.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6d5afe39-c72e-4bb9-95e4-1ca7cdd960f7")
+	)
+	(fp_arc
+		(start 6 4.5)
+		(mid 5.56066 5.56066)
+		(end 4.5 6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4b053ce7-d89b-404e-8f97-803ec5c22713")
+	)
+	(fp_circle
+		(center 0 -2.7)
+		(end 0.25 -2.7)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "ed0b156c-74c9-4299-9d2a-55de080c6e47")
+	)
+	(pad "1" smd rect
+		(at 0 -4.95)
+		(size 5.4 2.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "1feb2866-994a-4902-a842-38e1dff03bc8")
+	)
+	(pad "2" smd rect
+		(at 0 4.95)
+		(size 5.4 2.9)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "8deb8f57-35be-4fb2-9eda-33f90366ff1b")
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "F.Cu" "B.Cu" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
+			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
+			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
+			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
+			"In29.Cu" "In30.Cu"
+		)
+		(uuid "66d394aa-5166-42e7-8a6d-273761e1a9ed")
+		(hatch full 0.508)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.1)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks allowed)
+			(vias not_allowed)
+			(pads allowed)
+			(copperpour allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.508)
+			(thermal_bridge_width 0.508)
+		)
+		(polygon
+			(pts
+				(xy -5 6) (xy -6 5) (xy -6 -4.2) (xy -4.2 -6) (xy -2.9 -6) (xy -2.9 -3.3) (xy 2.9 -3.3) (xy 2.9 -6)
+				(xy 5 -6) (xy 6 -5) (xy 6 4.5) (xy 5.998 4.579) (xy 5.992 4.657) (xy 5.982 4.735) (xy 5.967 4.812)
+				(xy 5.949 4.888) (xy 5.927 4.964) (xy 5.9 5.038) (xy 5.87 5.11) (xy 5.837 5.181) (xy 5.799 5.25)
+				(xy 5.758 5.317) (xy 5.714 5.382) (xy 5.666 5.444) (xy 5.615 5.504) (xy 5.561 5.561) (xy 5.504 5.615)
+				(xy 5.444 5.666) (xy 5.382 5.714) (xy 5.317 5.758) (xy 5.25 5.799) (xy 5.181 5.837) (xy 5.11 5.87)
+				(xy 5.038 5.9) (xy 4.964 5.927) (xy 4.888 5.949) (xy 4.812 5.967) (xy 4.735 5.982) (xy 4.657 5.992)
+				(xy 4.579 5.998) (xy 4.5 6) (xy 2.9 6) (xy 2.9 3.3) (xy -2.9 3.3) (xy -2.9 6)
+			)
+		)
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3RD_PARTY}/3dmodels/org_vinciecodrive_kicadlibs/VED_Passive_Components/Wurth-Shielded-Power-Inductor-1260P.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
